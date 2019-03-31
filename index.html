@@ -6,6 +6,9 @@
     	<title>Quiz Board</title>
     	<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     	<link href="css/style.css" rel="stylesheet" type="text/css">
+      <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+      <script src="js/scripts.js">
+      </script>
     </head>
     <body>
     	<div class="container">
@@ -26,11 +29,6 @@
     						<label for="email">Email:</label> <input class="form-control" id="email" required="" type="email">
     					</div>
     				</div>
-    				<div class="col-md-4">
-    					<div class="form-group">
-    						<label for="today">Date:</label><input class="form-control" id="date" required="" type="date">
-    					</div>
-    				</div>
     			</div>
     			<div class="well">
     				<div class="row">
@@ -38,24 +36,24 @@
     						<div class="radio">
     							<br>
     							<div class="panel panel-default">
-    								<label for="question1">Q1. The script tag must be placed in the?<br>
-    								<input id="q1" name="question1" type="radio" value="The head tag"> the head tag<br>
-    								<input id="q1" name="question1" type="radio" value="before body end"> before body end<br>
-    								<input id="q1" name="question1" type="radio" value="The title or head"> the title or head<br></label><br>
+    								<label for="question1">Q1. Inside which HTML element do we put the JavaScript?<br>
+    								<input id="q1" name="question1" type="radio" value="<js>"> <js><br>
+    								<input id="q1" name="question1" type="radio" value="<script>"> <script><br>
+    								<input id="q1" name="question1" type="radio" value="<javascript>"> <javascript><br></label><br>
     								<br>
     							</div>
     							<div class="panel panel-default">
-    								<label for="question2">Q2. Which of the following Attribute is used to include External JS code inside your HTML Document?<br>
-    								<input name="question2" type="radio" value="src"> src<br>
-    								<input name="question2" type="radio" value="link"> link<br>
-    								<input name="question2" type="radio" value="script"> script<br></label><br>
+    								<label for="question2">Q2. Using____statement is how you test for a specific condition.<br>
+    								<input name="question2" type="radio" value="select"> select<br>
+    								<input name="question2" type="radio" value="if"> if<br>
+    								<input name="question2" type="radio" value="switch"> switch<br></label><br>
     								<br>
     							</div>
     							<div class="panel panel-default">
-    								<label for="question3">Q3. What is the HTML tag under which one can write the JavaScript code?<br>
-    								<input name="question3" type="radio" value="javascript"> JavaScript<br>
-    								<input name="question3" type="radio" value="script"> script<br>
-    								<input name="question3" type="radio" value="scripted"> scripted<br></label><br>
+    								<label for="question3">Q3. What is the client-side JavaScript object?<br>
+    								<input name="question3" type="radio" value="FileUpload"> FileUpload<br>
+    								<input name="question3" type="radio" value="Client"> Client<br>
+    								<input name="question3" type="radio" value="Database"> Database<br></label><br>
     								<br>
     							</div>
     						</div>
@@ -64,10 +62,9 @@
     						<div class="radio">
     							<br>
     							<div class="panel panel-default">
-    								<label for="question4">Q4. In JavaScript, we do not have datatypes like integer and float. What is the function that can be used to check if the number is an integer or not?<br>
-    								<input name="question4" type="radio" value="integer"> integer<br>
-    								<input name="question4" type="radio" value="ifInteger"> ifInteger<br>
-    								<input name="question4" type="radio" value="isInteger"> isInteger<br></label><br>
+    								<label for="question4">Q4. In JavaScript, window.prompt() method return true or false value?<br>
+    								<input name="question4" type="radio" value="True"> True<br>
+    								<input name="question4" type="radio" value="False"> False<br></label><br>
     								<br>
     							</div>
     							<div class="panel panel-default">
@@ -77,12 +74,17 @@
     								<input name="question5" type="radio" value="increased server interaction"> increased server interaction<br></label><br>
     								<br>
     							</div>
-    							<div class="panel panel-default">
-    								<label for="question6">Q6. Which function of an Array object calls a function for each element in the array?<br>
-    								<input name="question6" type="radio" value="every()"> every<br>
-    								<input name="question6" type="radio" value="forEach"> forEach<br>
-    								<input name="question6" type="radio" value="forEvery()">forEvery<br></label>
+
+                  <div class="panel panel-default">
+    								<label for="question6">Q6. What are the variables used for in Javascipt programs?<br>
+    								<input name="question6" type="radio" value="Storing numbers,dates or other values"> Storing numbers,dates or other values<br>
+    								<input name="question6" type="radio" value="varying randomly"> varying randomly<br>
+    								<input name="question6" type="radio" value="causing high-school algebra flashbacks"> causing high-school algebra flashbacks<br></label>
     							</div>
+
+                  <div class="panel panel-dafault">
+                    <label for="question7"Q7. What is DOM?<br>
+                    <input
     						</div>
     					</div>
     				</div>
