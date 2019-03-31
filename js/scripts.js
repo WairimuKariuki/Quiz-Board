@@ -54,6 +54,7 @@ $(document).ready(function() {
 			correct += 0;
 		}
 				var messages = ["Awesome!", "Fairly passed", "It is important you repeat this test"]
+				var photo = ["images/awesome.jpeg", "images/good.jpeg", "images/fail.jpeg", ]
 		var score;
 		if (correct >= 83.33) {
 			score = 0;
@@ -64,7 +65,8 @@ $(document).ready(function() {
 		}
 		document.getElementById("messages").innerHTML = messages[score];
 		document.getElementById("results").innerHTML = results();
-    document.
+  	document.getElementById("photo").src = photo[score];
+
 		function myFunction() {
 			document.getElementById("retake").style.visibilty = "visible";
 		}
