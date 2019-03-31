@@ -2,12 +2,12 @@
 .jumbotron {background-color: white;
 
 }
-.container {background-color: #8d0072;
+.container {background-color: #ffbf00;
 }
 .radio{font-size: 100%;
        color: black;
 }
-.well{background-color:#d4e099;
+.well{background-color: #bdbdbd;
 }
 h1{text-align: center;
 }
@@ -20,8 +20,8 @@ input:focus:invalid {
   box-shadow: none;
 }
 .messages2{
-  font-size: 60px;
+  font-size: 40px;
 }
 .results2{
-  font-size: 60px;
+  font-size: 40px;
 }
