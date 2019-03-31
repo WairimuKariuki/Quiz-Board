@@ -14,7 +14,7 @@ $(document).ready(function() {
 		var question6 = $("input:radio[name=question6]:checked").val();
 		var question7 = $("input:radio[name=question7]:checked").val();
 		 $("input").prop("disabled", true);
-		if (question1 === undefined || question2 === undefined || question3 === undefined || question4 === undefined || question5 === undefined || question6 === undefined || question7 === undefined) {
+		if (question1 === undefined || question2 === undefined || question3 === undefined || question4 === undefined || question5 === undefined || question6 === undefined) {
 			alert("Please answer all questions")
 		}
 
@@ -53,11 +53,6 @@ $(document).ready(function() {
 		} else if (question6 != answers[5]) {
 			correct += 0;
 		}
-    if (question7 == answers[6]) {
-      correct += 16.67; answer
-    } else if (question7 !=answers[6]) {
-			correct += 0;
-		}
 				var messages = ["Awesome!", "Fairly passed", "It is important you repeat this test"]
 		var score;
 		if (correct >= 83.33) {
@@ -69,7 +64,7 @@ $(document).ready(function() {
 		}
 		document.getElementById("messages").innerHTML = messages[score];
 		document.getElementById("results").innerHTML = results();
-
+    document.
 		function myFunction() {
 			document.getElementById("retake").style.visibilty = "visible";
 		}
