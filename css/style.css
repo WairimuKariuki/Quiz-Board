@@ -1,5 +1,10 @@
-
-.jumbotron {background-color: white;
+body  {
+  background-image: url(../image/Hd-Technology-Image-image.jpg);
+}
+.jumbotron {background-image: url(../image/Hd-technology-Image-image.jpg);
+  webkit-box-shadow: 6px 0px 80px 9px rgba(0,0,0,0.75);
+-moz-box-shadow: 6px 0px 80px 9px rgba(0,0,0,0.75);
+box-shadow: 6px 0px 80px 9px rgba(0,0,0,0.75);
 
 }
 .container {background-color: #ffbf00;
