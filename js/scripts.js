@@ -1,5 +1,6 @@
-var answers = ["before body end", "script", "script", "isInteger", "Increased interactivity", "forEach"]
 
+var answers = ["before body end", "script", "script", "isInteger", "Increased interactivity", "forEach"]
+//USER INTERFACE LOGIC
 
 $(document).ready(function() {
 	$(".quiz").submit(function(event) {
@@ -12,7 +13,6 @@ $(document).ready(function() {
 		var question4 = $("input:radio[name=question4]:checked").val();
 		var question5 = $("input:radio[name=question5]:checked").val();
 		var question6 = $("input:radio[name=question6]:checked").val();
-		var question7 = $("input:radio[name=question7]:checked").val();
 		 $("input").prop("disabled", true);
 		if (question1 === undefined || question2 === undefined || question3 === undefined || question4 === undefined || question5 === undefined || question6 === undefined) {
 			alert("Please answer all questions")
@@ -21,6 +21,7 @@ $(document).ready(function() {
 		function results() {
 			return nameInput + " you got " + correct;
 		}
+//BUSINESS LOGIC
 
 		var correct = 0
 		if (question1 == answers[0]) {
@@ -53,8 +54,8 @@ $(document).ready(function() {
 		} else if (question6 != answers[5]) {
 			correct += 0;
 		}
-				var messages = ["Awesome!", "Fairly passed", "It is important you repeat this test"]
-				var photo = ["images/awesome.jpeg", "images/good.jpeg", "images/fail.jpeg", ]
+		var messages = ["Awesome!", "Fairly passed", "It is important you repeat this test"]
+		var photo = ["images/awesome.jpeg", "images/good.jpeg", "images/fail.jpeg", ]
 		var score;
 		if (correct >= 83.33) {
 			score = 0;
@@ -65,7 +66,7 @@ $(document).ready(function() {
 		}
 		document.getElementById("messages").innerHTML = messages[score];
 		document.getElementById("results").innerHTML = results();
-  	document.getElementById("photo").src = photo[score];
+		document.getElementById("photo").src = photo[score];
 
 		function myFunction() {
 			document.getElementById("retake").style.visibilty = "visible";
